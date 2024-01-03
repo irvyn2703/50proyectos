@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url('https://images.unsplash.com/photo-1486401899868-0e435ed85128?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 0, 255);
+    opacity: 0.5;
+}
+
+.split.right {
+    right: 0;
+    background: url('https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(7, 121, 23);
+    opacity: 0.5;
+
+}
+
+.container h2 {
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem; 
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60%;
+    margin: 0% calc(50% - 90px);
+    transition: 0.3s ease-in-out;
+}
+
+.split.left a:hover {
+    border-color: blue;
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+.split.right a:hover {
+    border-color: rgb(3, 146, 63);
+    background-color: rgb(3, 146, 63);
+    transform: scale(1.1);
+}
+
+.split.left.activate {
+    width: 75%;
+    background-position: center;
+}
+
+.split.left.inactivate {
+    width: 25%;
+    background-position: left;
+}
+
+.split.right.activate {
+    width: 75%;
+    background-position: center;
+}
+
+.split.right.inactivate {
+    width: 25%;
+    background-position: right;
+}

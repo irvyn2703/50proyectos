@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(45, 117, 199);
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px 50px;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.formulario a{
+    text-decoration: none;
+    color: rgb(142, 202, 255);
+    font-weight: bold;
+}
+
+.btn{
+    width: 100%;
+    background-color: rgb(142, 202, 255);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.formControl {
+    margin: 10px 0px 30px;
+    width: 100%;
+}
+
+.formControl input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1.5px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.formControl input:focus{
+    outline: 0;
+    border-bottom-color: #5bb0f5 ;
+}
+
+.formControl label{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(142, 202, 255);
+    font-weight: bold;
+    opacity: 0.9;
+    transform: translateY(-0px) ;
+    transition: 0.5s cubic-bezier(.53,.5,.13,1.47);
+}
+
+.formControl input:focus + label,
+.formControl input:valid + label{
+  color: #fff;
+  opacity: 1;
+  transform: translateY(-60px);
+}
