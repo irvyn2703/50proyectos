@@ -62,19 +62,19 @@ body {
     border-bottom-color: #5bb0f5 ;
 }
 
-.formControl label{
+.formControl label span{
     display: inline-block;
     text-decoration: none;
     color: rgb(142, 202, 255);
     font-weight: bold;
-    opacity: 0.9;
-    transform: translateY(-0px) ;
-    transition: 0.5s cubic-bezier(.53,.5,.13,1.47);
+    opacity: 0.3;
+    transform: translateY(5px) ;
+    transition: 0.3s cubic-bezier(.53,.5,.13,1.47);
 }
 
-.formControl input:focus + label,
-.formControl input:valid + label{
+.formControl input:focus + label span,
+.formControl input:valid + label span{
   color: #fff;
-  opacity: 1;
+  opacity: 9;
   transform: translateY(-60px);
 }
