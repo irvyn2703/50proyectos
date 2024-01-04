@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(226, 226, 226);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.card {
+    width: 80%;
+    padding: 25px 0px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px 0px;
+    background: url('https://imgs.search.brave.com/yRVVi0HNsOFMUWs55h4p9usMZ9cwCCXIuHO3NW3heIc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2NoYXQtcG5n/LXBuZy1pbWFnZS01/MTIucG5n');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 200% 10px;
+    transition: 0.5s ease-out;
+}
+
+.card.activate {
+    background-position: 90% 10px;
+    background-blend-mode: color-burn;
+    background-color: aliceblue;
+    padding: 50px 0px 75px 0px;
+}
+
+.card i {
+    position: absolute;
+    right: 13vw;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.card h3 {
+    margin: 30px 25px 30px 25px;
+    font-size: 17px;
+}
+
+.card p {
+    margin: 0px 25px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card.activate p {
+    position: static;
+    opacity: 1;
+}
