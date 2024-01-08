@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(168, 43, 226);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.container {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card i {
+    font-size: 60px;
+    margin: 10px;
+    transition: scale 1.5s cubic-bezier(.15,1.08,.72,1.14), transform 1.5s cubic-bezier(.15,1.08,.72,1.14);
+}
+
+.card .contador {
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.card .texto {
+    font-size: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+}
+
+.card i:hover {
+    scale: 1.2;
+    transform: translateY(-20%);
+    transition-duration: 0.5s;
+    filter: drop-shadow(0px 0px 10px #efb4fd)
+}
