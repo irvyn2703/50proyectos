@@ -40,11 +40,11 @@ body {
 .card i {
     font-size: 60px;
     margin: 10px;
-    transition: scale 1.5s cubic-bezier(.15,1.08,.72,1.14), transform 1.5s cubic-bezier(.15,1.08,.72,1.14);
+    transition: scale 1.5s cubic-bezier(.15,1.08,.72,1.14);
 }
 
 .card .contador {
-    font-size: 35px;
+    font-size: 45px;
     margin: 10px;
     font-weight: bold;
 }
@@ -57,8 +57,7 @@ body {
 }
 
 .card i:hover {
-    scale: 1.2;
-    transform: translateY(-20%);
+    scale: 1.1;
     transition-duration: 0.5s;
-    filter: drop-shadow(0px 0px 10px #efb4fd)
+    filter: drop-shadow(0px 0px 5px #efb4fd)
 }

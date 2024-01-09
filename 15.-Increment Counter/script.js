@@ -11,15 +11,26 @@ obtenerSubs();
 var inter = setInterval(contar, 1)
 
 function contar() {
-    temp = temp + 10;
-
-    if ((temp > numX) && (temp > numYoutube) && (temp > numFace)){
-        clearInterval(inter)
-    }
+    temp = temp + 11;
 
     contenidos.forEach(element => {
         element.innerHTML = temp
     });
+
+    if (temp > numX){
+        contenidos[0].innerHTML = numX        
+    }
+    if (temp > numYoutube) {
+        contenidos[1].innerHTML = numYoutube
+    }
+    if (temp > numFace) {
+        contenidos[2].innerHTML = numFace    
+    }
+
+    if ((temp > numX) && (temp > numYoutube) && (temp > numFace)) {
+        clearInterval(inter)
+    }
+    //console.log(temp)
 }
 
 function obtenerSubs(){
