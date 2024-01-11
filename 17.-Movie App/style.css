@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #22254b;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    background-color: #373b69;
+    top: 0;
+    display: flex;
+    justify-content: end;
+}
+
+nav input {
+    background-color: #373b69;
+    margin: 13px;
+    padding: 12px;
+    border: 2px solid #22254b;
+    color: #8388cf;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    width: 75%;
+    max-width: 350px;
+}
+
+.card {
+    height: 500px;
+    width: 275px;
+    background: url('https://image.tmdb.org/t/p/w1280/2e853FDVSIso600RqAMunPxiZjq.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
