@@ -31,15 +31,65 @@ nav input {
     max-width: 350px;
 }
 
-.card {
+
+.movie {
     height: 500px;
     width: 275px;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+}
+
+.card {
+    height: calc(100% - 100px);
+    width: 100%;
     background: url('https://image.tmdb.org/t/p/w1280/2e853FDVSIso600RqAMunPxiZjq.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 2px;
-    color: aliceblue;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    top: 0;
+}
+
+.contenido {
+    position: absolute;
+    text-align: center;
+    bottom: 100px;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    opacity: 0;
+}
+
+.pie {
+    background-color: #373b69;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.pie h4 {
+    font-weight: bold;
+}
+
+.pie .titulo {
+    font-size: 1.5rem;
+}
+
+.valoracion {
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #22254b;
+    height: fit-content;
+    padding: 10px;
 }
